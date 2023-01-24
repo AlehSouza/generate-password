@@ -1,0 +1,240 @@
+/* Utils */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    user-select: none;
+    font-family: 'JetBrains Mono', monospace;
+    outline: none;
+}
+
+/* Generate Password */
+.generatePass_container {
+    width: 380px;
+    color: rgba(255, 255, 255, 0.500);
+}
+
+.generatePass_result {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.generatePass_result input {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #24232b;
+    font-size: 22px;
+    border: 0px;
+    color: white;
+}
+
+.generatePass_result input::placeholder {
+    color: rgba(255, 255, 255, 0.200);
+}
+
+.generatePass_result button {
+    right: 0px;
+    padding: 16.5px 20px;
+    background-color: #24232b;
+    border: 0px;
+    cursor: pointer;
+} 
+
+.generatePass_result button:active {
+    background-color: #1d1c22;
+}
+
+.generatePass_result button span {
+    font-size: 16px;
+    color: #a4ffaf
+}
+
+.generatePass_options {
+    background-color: #24232b;
+}
+
+.generatePass_length {
+    padding: 20px;
+    background-color: #24232b;
+    flex-direction: column;
+    align-items: center;    
+    display: flex;
+}
+
+.generatePass_length_header {
+    width: 100%;
+    color: white;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.generatePass_length_header input {
+    width: 50px;
+    font-size: 20px;
+    color: #a4ffaf;
+    text-align: right;
+    background-color: transparent;
+    border: 0px;
+}
+
+.generatePass_mediator {
+    width: 100%;
+}
+
+/* Checkbox options styles */
+
+.checkbox_option {
+    padding: 6px 20px;
+    align-items: center;
+    display: flex;
+}
+
+.checkbox_option label {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.checkbox_option input {
+    margin-right: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Checkbox css style */
+
+input[type="checkbox"] {
+	position: relative;
+	margin: .4rem;
+}
+
+input[type="checkbox"]:before {
+	content: ' ';
+	background: #18171f;
+	border: 2px solid #a4ffaf;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	width: 0.9rem;
+	height: 0.9rem;
+	transition: background .3s ease-in-out;
+}
+
+input[type="checkbox"]:checked:before {
+	background: #a4ffaf;
+}
+
+input[type="checkbox"]:checked:after {
+	content: ' ';
+	background: transparent;
+	border-left: .2rem solid black;
+	border-bottom: .2rem solid black;
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 60%;
+	height: 30%;
+	z-index: 2;
+	transform: rotate(-45deg);
+}
+
+/* Range Css Style */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #85d28e;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+/* Strength password */
+
+.generatePass_strength {
+    background-color: #18171f;
+    margin: 20px;
+    margin-top: 15px;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.generatePass_strength label {
+    font-size: 14px;
+}
+
+.strength {
+    display: flex;
+}
+
+.bar_power_full {
+    width: 5px;
+    height: 100%;
+    margin: 0px 2px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.bar_power_fill {
+    width: 5px;
+    height: 100%;
+    margin: 0px 2px;
+    border: 1px solid white;
+}
+
+/* Button password  */
+
+.generatePass_button {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.generatePass_button button {
+    width: 100%;
+    padding: 15px;
+    font-weight: 500;
+    background-color: #a4ffaf;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.generatePass_button button span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.generatePass_button button:active {
+    background-color: #85d28e;
+}
