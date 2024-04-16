@@ -229,6 +229,7 @@ input[type=range]::-webkit-slider-runnable-track {
     padding: 15px;
     font-weight: 500;
     background-color: #a4ffaf;
+    border: 0px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -250,7 +251,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .toast {
     position: absolute;
     background-color: #24232b;
-    max-width: 380px;
+    width: 380px;
     height: 60px;
     padding: 10px 0px;
     top: -120px;
@@ -263,6 +264,13 @@ input[type=range]::-webkit-slider-runnable-track {
     color: white;
     justify-content: center;
     display: flex;
+}
+
+@media screen and (max-width: 390px) {
+    .toast {
+        width: 86%;
+        margin-left: 8%;
+    }
 }
 
 .toast label {
