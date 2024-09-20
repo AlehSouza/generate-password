@@ -66,7 +66,6 @@ const GeneratePassword = () => {
         }
 
         if (range === 8) {
-            console.log('streng 1')
             setStrength(1)
         }
         else if (range <= 10) {
